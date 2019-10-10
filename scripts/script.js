@@ -1,4 +1,7 @@
-content = document.getElementById("content");
+let content = document.getElementById("content");
+let sortBtn = document.getElementById("sort");
+
+
 
 function like(){
 
@@ -20,7 +23,7 @@ function like(){
 }
 
 function showCards() {
-
+    content.innerHTML = ""
     for (let movie of movies) {
         content.innerHTML += 
         `
@@ -38,6 +41,25 @@ function showCards() {
     }
 }
 
+function sortByLike(data){
+    data.sort(function(a, b){
+        if (parseInt(a.Likes) > parseInt(b.Likes)) {
+            return 1
+        } else {
+            return -1
+        }
+    })  
+    showCards()
+    like()
+}
 
+
+sortBtn.addEventListener("click", function(){
+    sortByLike(movies)
+})
 showCards()
 like()
+
+
+
+

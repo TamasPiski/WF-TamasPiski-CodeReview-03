@@ -62,10 +62,19 @@ main {
 }
 
 #sort{
-    padding-right: 1em;
+    padding: 1em;
     font-size: 1.1em;
     justify-self: flex-end;
     align-self: flex-end;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    &:hover {
+        background-color: black;
+        border-color: white;
+        color: white;
+        transition: all 200ms;
+    }
 }
 
 #content{
@@ -121,5 +130,6 @@ span{
     font-size: 4em;
     margin-left: 0.5em;
 }
+
 
 
