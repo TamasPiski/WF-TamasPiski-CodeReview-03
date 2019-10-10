@@ -47,20 +47,25 @@ main {
 
 #title{
     display: flex;
+    flex-direction: row;
     color:lightgray;
-    justify-content: space-between;
-    align-content: center;
     padding:1em;
+    justify-content: space-between;
 }
 
 #movie {
-   padding-left: 21em;
    font-size: 1.5em;
+   display: block;
+   text-align: center;
+   width: 100%;
+   margin-left:1em;
 }
 
 #sort{
     padding-right: 1em;
     font-size: 1.1em;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 
 #content{
@@ -89,5 +94,32 @@ img {
 }
 
 .title{
-    margin: auto;
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 2em;
 }
+
+.director {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.runtime {
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+
+button {
+    font-size: 3em;
+    margin-left: 0.5em;
+    margin-top: 6em;
+    color: white;
+    background-color: blue;
+}
+
+span{
+    font-size: 4em;
+    margin-left: 0.5em;
+}
+
+

@@ -49,23 +49,31 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: lightgray;
+  padding: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 1em;
 }
 
 #movie {
-  padding-left: 21em;
   font-size: 1.5em;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-left: 1em;
 }
 
 #sort {
   padding-right: 1em;
   font-size: 1.1em;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 #content {
@@ -101,6 +109,31 @@ img {
 }
 
 .title {
-  margin: auto;
+  margin-left: 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.director {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.runtime {
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+
+button {
+  font-size: 3em;
+  margin-left: 0.5em;
+  margin-top: 6em;
+  color: white;
+  background-color: blue;
+}
+
+span {
+  font-size: 4em;
+  margin-left: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */
